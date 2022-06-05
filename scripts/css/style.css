@@ -1,0 +1,411 @@
+/* --------------- Topo --------------- */
+.navbar-unacon {
+    position: fixed;
+    z-index: 998;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    min-height: 60px;
+
+    background-color:#0060ae;
+    border-bottom: 1px solid #00000026;
+    color: white;
+}
+
+.navbar-unacon > * {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.navbar-unacon .-brand {
+    font-size: large;
+}
+
+.navbar-unacon a, .navbar-unacon a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-unacon .-spacer {
+    flex: 1;
+}
+
+.navbar-unacon .-link {
+    background-color: #00000026;
+}
+
+.navbar-unacon .-link:hover {
+    background: #00000054;
+    color: white;
+}
+
+@media(max-width: 800px) {
+    .navbar-unacon {
+        position: relative;
+    }
+
+    .navbar-unacon .-link {
+        display: none;
+    }
+
+    .navbar-unacon .-spacer {
+        display: none;
+    }
+}
+
+/* ------------------------------------ */
+
+/* -------------- Content ------------- */
+.content {
+    padding-top: 80px; /* 60 + 20 */
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55) ), url('../../img/bg.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* ------------------------------------ */
+
+/* --------------- Home --------------- */
+@media(max-width: 800px) {
+    .content {
+        padding-top: 0;
+    }
+
+    .main-buttons {
+        align-items: stretch;
+        flex-direction: column;
+    }
+}
+/* ------------------------------------ */
+
+.shadow-box {
+    padding: 35px 30px;
+    border-radius: 8px;
+    color: white;
+}
+
+.main {
+    margin-bottom: 120px;
+}
+
+.main-title {
+    font-size: 26px;
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-button {
+    flex: 1;
+    margin: 10px 20px 10px 20px;
+    font-size: 16px;
+}
+
+.main-button .-icon {
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.btn:not(.default) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0;
+    border: none;
+    padding: 10px 12px;
+    transition: all 0.15s ease;
+
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+}
+
+.btn-primary:not(.default) {
+    background-color: #f9fcff;
+    color: #286293;
+}
+
+.btn-primary:not(.default):hover {
+    color: #fff;
+    background-color: #3379b7;
+}
+
+.btn-success:not(.default) {
+    background-color: #fff;
+    color: #2e8f2e;
+}
+
+/* -------------- Rodapé -------------- */
+
+.footer {
+    padding: 30px 40px;
+    background-color: #004582;
+    color: #fff;
+}
+
+.footer a, .footer a:hover {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ------------------------------------ */
+
+
+/* --------------- Novo --------------- */
+.main .container:not(.-default) {
+    max-width: 820px;
+}
+
+.page {
+    background: #fff;
+    padding: 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+}
+
+.page + .page {
+    border-top: 1px solid #c0c0c0
+}
+
+.sub {
+    font-size: small;
+}
+
+input[type="date"].form-control, input[type="time"].form-control, input[type="datetime-local"].form-control, input[type="month"].form-control {
+    line-height: inherit;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.btn-enviar {
+    width: 100%;
+    font-weight: bold;
+}
+
+.voltar {
+    text-align: right;
+}
+
+.voltar .btn {
+    margin-bottom: 5px;
+    display: inline-block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+/* ------------------------------------ */
+
+/* ------------- Resultado ------------ */
+.cadastro-resultado {
+    font-size: 1.15em;
+    line-height: 1.60em;
+}
+
+.cadastro-resultado .-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #286293;
+}
+
+.cadastro-resultado .-subtitle {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+.cadastro-resultado .-pad {
+    margin-left: 20px;
+}
+
+.cadastro-resultado .-items {
+    margin-top: 10px;
+}
+
+.cadastro-resultado .-email {
+    margin-bottom: 8px;
+    font-size: 1.15em;
+    /* font-weight: bold; */
+}
+
+.cadastro-resultado .-email .-value {
+    color: #286293;
+}
+
+.cadastro-resultado .-protocolo {
+    font-size: 1.15em;
+    /* font-weight: bold; */
+}
+
+.cadastro-resultado .-protocolo .-value {
+    color: #286293;
+}
+
+.consulta-resultado {
+    font-size: 1.15em;
+}
+
+.dados-table th, .dados-table td {
+    padding: 5px 10px;
+    vertical-align: top;
+}
+
+.dados-table.-align-top td, .dados-table.-align-top th {
+    vertical-align: top;
+}
+
+.text-primary {
+    color: #286293;
+}
+
+.status-andamento.status-0 {
+    color: #bf952f;
+}
+
+.status-andamento.status-1 {
+    color: #23913e;
+}
+
+.status-andamento.status-2 {
+    color: #bf512f;
+}
+/* ------------------------------------ */
+
+/* -------------- Login --------------- */
+.login-err {
+    margin-bottom: 15px;
+}
+
+.login-err .-title {
+    font-size: large;
+}
+
+.login-err .-msg {
+    color: #d05454;
+}
+/* ------------------------------------ */
+
+/* -------------- Agenda -------------- */
+.page-agenda {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 80vh;
+    margin-top: 20px;
+}
+
+.page-body {
+    flex-grow: 1;
+}
+
+.page-title {
+    display: flex;
+}
+
+.page-title > * {
+    flex: 1;
+}
+
+.page-footer {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #aaa;
+}
+
+.btn-logout {
+    padding: 4px 10px;
+}
+
+.table-header {
+    display: flex;
+    font-size: large;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 5px;
+}
+
+.-spacer {
+    flex-grow: 1;
+}
+
+.td-compact {
+    width: 1%;
+    white-space: nowrap;
+}
+
+.main-table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: separate;
+    /* table-layout: fixed; */
+}
+
+.main-table thead th {
+    border-bottom: 1px solid #ccc;
+}
+
+.main-table tbody tr:not(:last-child) td {
+    border-bottom: 1px solid #eee;
+}
+
+.main-table tbody tr:hover {
+    background: #f3f3f3;
+}
+
+.main-table th, .main-table td {
+    padding: 8px 14px;
+}
+
+.doctor-schedule {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: separate;
+    /* table-layout: fixed; */
+}
+
+.doctor-schedule thead th {
+    border-bottom: 1px solid #ccc;
+}
+
+.doctor-schedule tbody tr:not(:last-child) td {
+    border-bottom: 1px solid #eee;
+}
+
+.doctor-schedule tbody tr:hover {
+    background: #f3f3f3;
+}
+
+.doctor-schedule th, .doctor-schedule td {
+    padding: 8px 14px;
+}
+
+.admin-success {
+    margin-bottom: 15px;
+}
+
+.admin-success .-msg {
+    color: #23913e;
+}
+
+.admin-err {
+    margin-bottom: 15px;
+}
+
+.admin-err .-msg {
+    color: #d05454;
+}
+
+/* ------------------------------------ */

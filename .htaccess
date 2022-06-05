@@ -1,0 +1,15 @@
+<FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+
+  <IfModule mod_headers.c>
+    # Header set Cache-Control "max-age=172800, public, must-revalidate"
+    Header set Cache-Control "max-age=84600, public"
+  </IfModule>
+
+</FilesMatch>
+
+php_value post_max_size 0
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+RedirectMatch 403 arquivo/?$
